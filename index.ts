@@ -2,7 +2,7 @@
 
 import inquirer from "inquirer";
 
-let exchangeRates = {
+let exchangeRates:any = {
 	USD: 1,
 	EUR: 0.9,
 	GBP: 0.75,
@@ -43,4 +43,9 @@ let input = await inquirer.prompt(
       }
 	]
 );
-console.log(input);
+
+let result = Math.round(((input.amount / exchangeRates[input.fromCurrency])  * exchangeRates[input.toCurrency]) * 100) / 100;
+
+console.log(`That will be ${result} ${input.toCurrency}`);
+
+
