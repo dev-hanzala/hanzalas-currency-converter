@@ -1,0 +1,32 @@
+{
+  "name": "hanzalas-currency-converter",
+  "version": "1.0.0",
+  "description": "A simple currency converter.",
+  "main": "index.js",
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "bin": {
+    "hanzalas-currency-converter": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-hanzala/hanzalas-currency-converter.git"
+  },
+  "author": "dev-hanzala",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dev-hanzala/hanzalas-currency-converter/issues"
+  },
+  "homepage": "https://github.com/dev-hanzala/hanzalas-currency-converter#readme",
+  "dependencies": {
+    "inquirer": "^9.2.17"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7"
+  }
+}
